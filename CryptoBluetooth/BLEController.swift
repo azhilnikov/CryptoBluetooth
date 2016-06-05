@@ -320,7 +320,6 @@ class BLEController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         }
         // The value was successfully written, read it to return written value
         peripheral.readValueForCharacteristic(characteristic)
-        //self.delegate?.didBLESendConfirmation?()
     }
     
     // MARK: - Public methods
@@ -410,12 +409,12 @@ class BLEController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             self.delegate?.didBLEUpdateValue2?(v2)
         }
         
-        if let tariffText = latestBroadcastingDictionary[latestID1] as? String {
-            self.delegate?.didBLEUpdateText1?(tariffText)
+        if let text = latestBroadcastingDictionary[latestID1] as? String {
+            self.delegate?.didBLEUpdateText1?(text)
         }
         
-        if let extras = latestBroadcastingDictionary[latestList] as? [String: String] {
-            self.delegate?.didBLEUpdateList?(extras)
+        if let list = latestBroadcastingDictionary[latestList] as? [String: String] {
+            self.delegate?.didBLEUpdateList?(list)
         }
     }
     
@@ -505,10 +504,10 @@ class BLEController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             
             if !extraText.isEmpty {
                 if (dataType >= 0x80 && dataType < 0xA0) || 0xBE == dataType {
-                    extraText += " FEE"
+                    extraText += " PPP"
                 }
                 else if 0xBF != dataType {
-                    extraText += " TOLL"
+                    extraText += " MAIL"
                 }
                 
                 if 0 == extraAmount {

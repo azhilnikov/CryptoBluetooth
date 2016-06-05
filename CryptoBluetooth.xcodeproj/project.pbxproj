@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AD0152F1D03F3FC0082F690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD0152E1D03F3FC0082F690 /* AppDelegate.swift */; };
+		8AD015311D03F3FC0082F690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD015301D03F3FC0082F690 /* ViewController.swift */; };
+		8AD015341D03F3FC0082F690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD015321D03F3FC0082F690 /* Main.storyboard */; };
+		8AD015361D03F3FC0082F690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD015351D03F3FC0082F690 /* Assets.xcassets */; };
+		8AD015391D03F3FC0082F690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD015371D03F3FC0082F690 /* LaunchScreen.storyboard */; };
+		8AD015441D03F3FC0082F690 /* CryptoBluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD015431D03F3FC0082F690 /* CryptoBluetoothTests.swift */; };
+		8AD015511D03F42F0082F690 /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD015501D03F42F0082F690 /* BLEController.swift */; };
+		8AD015541D03F5090082F690 /* Cryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD015531D03F5090082F690 /* Cryptor.m */; };
+		8AD015571D03FFF30082F690 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD015561D03FFF30082F690 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AD015401D03F3FC0082F690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD015231D03F3FC0082F690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD0152A1D03F3FC0082F690;
+			remoteInfo = CryptoBluetooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8AD0152B1D03F3FC0082F690 /* CryptoBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD0152E1D03F3FC0082F690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AD015301D03F3FC0082F690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AD015331D03F3FC0082F690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AD015351D03F3FC0082F690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AD015381D03F3FC0082F690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AD0153A1D03F3FC0082F690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD0153F1D03F3FC0082F690 /* CryptoBluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoBluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD015431D03F3FC0082F690 /* CryptoBluetoothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBluetoothTests.swift; sourceTree = "<group>"; };
+		8AD015451D03F3FC0082F690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD015501D03F42F0082F690 /* BLEController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
+		8AD015521D03F5090082F690 /* CryptoBluetooth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoBluetooth-Bridging-Header.h"; sourceTree = "<group>"; };
+		8AD015531D03F5090082F690 /* Cryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cryptor.m; sourceTree = "<group>"; };
+		8AD015551D03F5480082F690 /* Cryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cryptor.h; sourceTree = "<group>"; };
+		8AD015561D03FFF30082F690 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AD015281D03F3FC0082F690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD015571D03FFF30082F690 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD0153C1D03F3FC0082F690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AD015221D03F3FC0082F690 = {
+			isa = PBXGroup;
+			children = (
+				8AD015561D03FFF30082F690 /* CoreBluetooth.framework */,
+				8AD0152D1D03F3FC0082F690 /* CryptoBluetooth */,
+				8AD015421D03F3FC0082F690 /* CryptoBluetoothTests */,
+				8AD0152C1D03F3FC0082F690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AD0152C1D03F3FC0082F690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AD0152B1D03F3FC0082F690 /* CryptoBluetooth.app */,
+				8AD0153F1D03F3FC0082F690 /* CryptoBluetoothTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD0152D1D03F3FC0082F690 /* CryptoBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				8AD0152E1D03F3FC0082F690 /* AppDelegate.swift */,
+				8AD015501D03F42F0082F690 /* BLEController.swift */,
+				8AD015551D03F5480082F690 /* Cryptor.h */,
+				8AD015531D03F5090082F690 /* Cryptor.m */,
+				8AD015301D03F3FC0082F690 /* ViewController.swift */,
+				8AD015321D03F3FC0082F690 /* Main.storyboard */,
+				8AD015351D03F3FC0082F690 /* Assets.xcassets */,
+				8AD015371D03F3FC0082F690 /* LaunchScreen.storyboard */,
+				8AD0153A1D03F3FC0082F690 /* Info.plist */,
+				8AD015521D03F5090082F690 /* CryptoBluetooth-Bridging-Header.h */,
+			);
+			path = CryptoBluetooth;
+			sourceTree = "<group>";
+		};
+		8AD015421D03F3FC0082F690 /* CryptoBluetoothTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AD015431D03F3FC0082F690 /* CryptoBluetoothTests.swift */,
+				8AD015451D03F3FC0082F690 /* Info.plist */,
+			);
+			path = CryptoBluetoothTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AD0152A1D03F3FC0082F690 /* CryptoBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD015481D03F3FC0082F690 /* Build configuration list for PBXNativeTarget "CryptoBluetooth" */;
+			buildPhases = (
+				8AD015271D03F3FC0082F690 /* Sources */,
+				8AD015281D03F3FC0082F690 /* Frameworks */,
+				8AD015291D03F3FC0082F690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoBluetooth;
+			productName = CryptoBluetooth;
+			productReference = 8AD0152B1D03F3FC0082F690 /* CryptoBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AD0153E1D03F3FC0082F690 /* CryptoBluetoothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD0154B1D03F3FC0082F690 /* Build configuration list for PBXNativeTarget "CryptoBluetoothTests" */;
+			buildPhases = (
+				8AD0153B1D03F3FC0082F690 /* Sources */,
+				8AD0153C1D03F3FC0082F690 /* Frameworks */,
+				8AD0153D1D03F3FC0082F690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AD015411D03F3FC0082F690 /* PBXTargetDependency */,
+			);
+			name = CryptoBluetoothTests;
+			productName = CryptoBluetoothTests;
+			productReference = 8AD0153F1D03F3FC0082F690 /* CryptoBluetoothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AD015231D03F3FC0082F690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexey Zhilnikov";
+				TargetAttributes = {
+					8AD0152A1D03F3FC0082F690 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MKA9RVA5U8;
+					};
+					8AD0153E1D03F3FC0082F690 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MKA9RVA5U8;
+						TestTargetID = 8AD0152A1D03F3FC0082F690;
+					};
+				};
+			};
+			buildConfigurationList = 8AD015261D03F3FC0082F690 /* Build configuration list for PBXProject "CryptoBluetooth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AD015221D03F3FC0082F690;
+			productRefGroup = 8AD0152C1D03F3FC0082F690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AD0152A1D03F3FC0082F690 /* CryptoBluetooth */,
+				8AD0153E1D03F3FC0082F690 /* CryptoBluetoothTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AD015291D03F3FC0082F690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD015391D03F3FC0082F690 /* LaunchScreen.storyboard in Resources */,
+				8AD015361D03F3FC0082F690 /* Assets.xcassets in Resources */,
+				8AD015341D03F3FC0082F690 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD0153D1D03F3FC0082F690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AD015271D03F3FC0082F690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD015311D03F3FC0082F690 /* ViewController.swift in Sources */,
+				8AD015511D03F42F0082F690 /* BLEController.swift in Sources */,
+				8AD0152F1D03F3FC0082F690 /* AppDelegate.swift in Sources */,
+				8AD015541D03F5090082F690 /* Cryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD0153B1D03F3FC0082F690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD015441D03F3FC0082F690 /* CryptoBluetoothTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AD015411D03F3FC0082F690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AD0152A1D03F3FC0082F690 /* CryptoBluetooth */;
+			targetProxy = 8AD015401D03F3FC0082F690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AD015321D03F3FC0082F690 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD015331D03F3FC0082F690 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AD015371D03F3FC0082F690 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD015381D03F3FC0082F690 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AD015461D03F3FC0082F690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AD015471D03F3FC0082F690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AD015491D03F3FC0082F690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CryptoBluetooth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = az.CryptoBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CryptoBluetooth/CryptoBluetooth-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AD0154A1D03F3FC0082F690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CryptoBluetooth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = az.CryptoBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CryptoBluetooth/CryptoBluetooth-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		8AD0154C1D03F3FC0082F690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CryptoBluetoothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = az.CryptoBluetoothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoBluetooth.app/CryptoBluetooth";
+			};
+			name = Debug;
+		};
+		8AD0154D1D03F3FC0082F690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CryptoBluetoothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = az.CryptoBluetoothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoBluetooth.app/CryptoBluetooth";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AD015261D03F3FC0082F690 /* Build configuration list for PBXProject "CryptoBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD015461D03F3FC0082F690 /* Debug */,
+				8AD015471D03F3FC0082F690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD015481D03F3FC0082F690 /* Build configuration list for PBXNativeTarget "CryptoBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD015491D03F3FC0082F690 /* Debug */,
+				8AD0154A1D03F3FC0082F690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8AD0154B1D03F3FC0082F690 /* Build configuration list for PBXNativeTarget "CryptoBluetoothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD0154C1D03F3FC0082F690 /* Debug */,
+				8AD0154D1D03F3FC0082F690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AD015231D03F3FC0082F690 /* Project object */;
+}
